@@ -1,0 +1,124 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap');
+
+
+body {
+    font-family: Arial, sans-serif;
+    background: url("../../images/login-bg.png") no-repeat center center fixed;
+    background-size: cover;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.login-container {
+    background: rgb(0, 68, 55,0.9);
+    padding: 30px;
+    border-radius: 50px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    width: 350px;
+    position: relative;
+    color: white;
+}
+
+.logo-name {
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px;
+    justify-content: center;
+}
+
+.logo {
+    width: 50px;
+    height: 50px;
+}
+
+.logo-name h1 {
+    margin: 0;
+    padding-left: 15px;
+    font-size: 40px;
+    font-family: 'Poppins', sans-serif;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+    color: #ffffff;
+}
+
+
+.tabs {
+    display: flex;
+    margin-bottom: 0px;
+}
+
+.tab {
+    width: 50%;
+    text-align: center;
+    padding: 10px;
+    cursor: pointer;
+    background-color: rgba(255, 196, 0, 0.9);
+    border-radius: 20px 20px 0 0;
+}
+
+.active-tab {
+    background-color: rgba(0, 122, 86, 0.7);
+    color: white;
+}
+
+.inactive-tab {
+    color: rgb(255, 255, 255);
+}
+
+
+.login-form {
+    display: none;
+    padding: 20px;
+    background-color: rgba(0, 122, 86, 0.7);
+    border-radius: 0 0 20px 20px;
+    margin-top: 0;
+}
+
+.active-form {
+    display: block;
+}
+
+.login-form label{
+    display:block;
+    margin-top: 10px;
+}
+
+.login-form input {
+    width: 93%;
+    padding: 10px;
+    margin-top:15px;
+    margin-bottom: 10px;
+    border: 1px solid #000000;
+    border-radius: 6px;
+}
+
+.login-form button {
+    width: 100%;
+    padding: 10px;
+    margin-top: 10px;
+    background-color: #00009c;
+    color: white;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+}
+
+.login-form button:hover {
+    background-color: #0056b3;
+}
+
+.signup-link {
+    font-size: 14px;
+    margin-top: 5px;
+    text-align: center;
+}
+
+.error-message {
+    color: red;
+    text-align: center;
+    margin-top: 10px;
+    min-height: 20px; 
+}

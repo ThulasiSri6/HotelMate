@@ -1,0 +1,79 @@
+body {
+    font-family: Arial, sans-serif;
+    background: url('../../images/mybookings-bg.png') no-repeat center center/cover;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.container {
+    background: rgb(255, 255, 255,0.8);
+    padding: 20px;
+    border-radius: 25px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    width: 80%;
+    max-width: 800px;
+}
+
+h2 {
+    text-align: center;
+}
+
+.booking-item {
+    display: flex;
+    justify-content: space-between;
+    background: rgb(255, 255, 255,0.8);
+    padding: 10px;
+    border-bottom: 1px solid #ddd;
+}
+
+.cancel-button {
+    align-self: center;
+    background-color: #ff4d4d;
+    color: white;
+    border: none;
+    padding: 15px;
+    height:50px;
+    border-radius: 15px;
+    cursor: pointer;
+}
+
+.cancel-button:disabled {
+    background-color: grey;
+    cursor: not-allowed;
+}
+
+.alert-modal {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.6);
+    display: none;
+    justify-content: center;
+    align-items: center;
+    z-index: 1000;
+}
+
+.alert-content {
+    background: white;
+    padding: 20px;
+    border-radius: 8px;
+    text-align: center;
+    width: 300px;
+}
+
+#closeAlert{
+    background-color: green;
+    margin-top: 5px;
+    border-radius: 5px;
+    color:white;
+}
+
+#alertIcon{
+    font-size: 40px;
+}

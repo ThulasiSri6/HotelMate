@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="login.css">
+    <title>HotelMate Login</title>
+</head>
+<body>
+    <div class="login-container">
+        <div class="logo-name">
+            <img src="../../images/logo.png" alt="HotelMate Logo" class="logo">
+            <h1>HotelMate</h1>
+        </div>
+
+      
+        <div class="tabs">
+            <div id="user-tab" class="tab active-tab">User</div>
+            <div id="admin-tab" class="tab inactive-tab">Admin</div>
+        </div>
+
+        
+        <div id="user-form" class="login-form active-form">
+            <label for="email">Email:</label>
+            <input type="text" id="email" placeholder="Enter Email">
+
+            <label for="password">Password:</label>
+            <input type="password" id="password" placeholder="Enter Password">
+
+            <button onclick="validateUserLogin()">Login</button>
+
+            <div class="error-message" id="user-error"></div>
+
+            <p class="signup-link">Don't have an account? <a href="../sign-up-page/signup.html">Sign-up</a></p>
+        </div>
+
+      
+        <div id="admin-form" class="login-form">
+            <label for="admin-id">Hotel ID:</label>
+            <input type="text" id="admin-id" placeholder="Enter Hotel ID">
+
+            <label for="admin-password">Password:</label>
+            <input type="password" id="admin-password" placeholder="Enter Password">
+
+            <button onclick="validateAdminLogin()">Login</button>
+
+            <div class="error-message" id="admin-error"></div>
+
+            <p class="signup-link">Don't have an account? <a href="../admin-signup-page/adminsign.html">Sign-up</a></p>
+        </div>
+    </div>
+
+    <script src="login.js"></script>
+</body>
+</html>

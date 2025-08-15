@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Booking Page</title>
+    <link rel="stylesheet" href="booking.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+</head>
+
+<body>
+    <div class="booking-form">
+        <h2>Booking Form</h2>
+        <form id="bookingForm">
+            <label>Arrival Date:</label>
+            <input type="date" id="checkin" required min="">
+
+            <label>Departure Date:</label>
+            <input type="date" id="checkout" required>
+
+            <label>Number of Guests:</label>
+            <input type="number" id="num_guests" min="1" required>
+
+            <label>Number of Rooms:</label>
+            <input type="number" id="num_rooms" min="1" required>
+
+            <button type="submit">Book Now</button>
+        </form>
+    </div>
+
+    <div id="alert-modal" class="alert-modal" style="display: none;">
+        <div class="alert-content">
+            <i id="alertIcon"></i>
+            <div class="alert-message" id="alertMessage"></div>
+            <button class="close-alert" id="closeAlert">Close</button>
+        </div>
+    </div>
+
+    <script src="booking.js"></script>
+</body>
+
+</html>

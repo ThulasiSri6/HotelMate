@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Update Hotel Details</title>
+    <link rel="stylesheet" href="adminupdate.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+</head>
+
+<body>
+    <div class="container">
+        <h1 id="hotel-name">Hotel Name</h1>
+        <form id="updateForm">
+            <label>Email:</label>
+            <input type="email" name="contactEmail" id="contactEmail">
+
+            <label>Phone:</label>
+            <input type="text" name="contactPhone" id="contactPhone">
+
+            <label>Website:</label>
+            <input type="url" name="contactWebsite" id="contactWebsite">
+
+            <label>Minimum Price:</label>
+            <input type="number" name="priceMin" id="priceMin">
+
+            <label>Maximum Price:</label>
+            <input type="number" name="priceMax" id="priceMax">
+
+            <label>Single Rooms:</label>
+            <input type="number" name="singleRooms" id="singleRooms">
+
+            <label>Double Rooms:</label>
+            <input type="number" name="doubleRooms" id="doubleRooms">
+
+            <button type="submit">Update</button>
+        </form>
+    </div>
+    <!-- Success Alert -->
+    <div id="success-alert" class="alert-modal">
+        <div class="alert-content success">
+            <i class="bi bi-check-circle-fill"></i>
+            <div class="alert-message">Hotel details updated successfully!</div>
+            <button class="close-alert">Close</button>
+        </div>
+    </div>
+
+    <!-- Error Alert -->
+    <div id="error-alert" class="alert-modal">
+        <div class="alert-content error">
+            <i class="bi bi-x-circle-fill"></i>
+            <div class="alert-message">An error occurred while updating!</div>
+            <button class="close-alert">Close</button>
+        </div>
+    </div>
+
+    <script src="adminupdate.js"></script>
+</body>
+
+</html>

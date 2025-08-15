@@ -1,0 +1,80 @@
+@import url('https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;600&display=swap');
+body, html {
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    height: 100%;
+    box-sizing: border-box;
+    font-family: 'Arial', sans-serif;
+    background: url('../../images/welcome-bg.jpeg') no-repeat center center/cover;
+}
+
+.container {
+    position: relative;
+    width: 100%;
+    height: 100%;
+}
+
+.top-bar {
+    position: absolute;
+    top: 20px;
+    right: 30px;
+}
+
+#logout {
+    background-color: white;
+    border: none;
+    padding: 10px 15px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-weight: bold;
+}
+
+#logout:hover {
+    background-color: #ddd;
+}
+
+.content {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    color: white;
+}
+
+h1 {
+    font-size: 30px;
+    letter-spacing: 2px;
+}
+
+h2 {
+    font-family: 'Cormorant Garamond', serif;
+    font-size: 70px;
+    margin-top: 10px;
+}
+
+.buttons {
+    margin-top: 30px;
+}
+
+.buttons button {
+    width:200px;
+    background-color: white;
+    border: none;
+    padding: 10px 30px;
+    margin: 10px;
+    cursor: pointer;
+    font-size: 18px;
+    border-radius: 5px;
+    transition: background-color 0.3s;
+}
+
+.buttons button:hover {
+    background-color: #ddd;
+}
+
+.bi{
+    color: white;
+    padding-right: 6px;
+}
